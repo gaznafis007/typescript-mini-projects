@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typescript Calculator</title>
+</head>
+<body class="bg-black">
+    <main class="mt-8">
+        <!-- header starts -->
+        <h2 class="text-3xl font-bold capitalize text-yellow-500 text-center">welcome to typescript calculator</h2>
+        <!-- header ends -->
+
+        <!-- calculator starts -->
+        <section class="w-1/3 mx-auto border-4 border-yellow-400 mx-auto p-8 mt-12">
+            <!-- screen starts -->
+            <div class="p-12 bg-yellow-500">
+                <p class="text-lg font-semibold">Input: <span id="input-display"></span></p>
+                <p class="text-lg font-semibold text-end" id="action-display"></p>
+                <p class="text-xl mt-2 border-t border-black font-bold mr-2">Result: <span id="output-display"></span></p>
+            </div>
+            <!-- screen ends -->
+
+            <!-- buttons starts-->
+            <div class="flex space-between gap-4 my-4">
+                <div class="grid grid-cols-3 gap-2 w-2/3">
+                    <p class="bg-amber-500 hover:bg-yellow-400 text-center text-black font-semibold p-4" id="btn-seven">7</p>
+                    <p class="bg-amber-500 hover:bg-yellow-400 text-center text-black font-semibold p-4" id="btn-eight">8</p>
+                    <p class="bg-amber-500 hover:bg-yellow-400 text-center text-black font-semibold p-4" id="btn-nine">9</p>
+                    <p class="bg-amber-500 hover:bg-yellow-400 text-center text-black font-semibold p-4" id="btn-four">4</p>
+                    <p class="bg-amber-500 hover:bg-yellow-400 text-center text-black font-semibold p-4" id="btn-five">5</p>
+                    <p class="bg-amber-500 hover:bg-yellow-400 text-center text-black font-semibold p-4" id="btn-six">6</p>
+                    <p class="bg-amber-500 hover:bg-yellow-400 text-center text-black font-semibold p-4" id="btn-one">1</p>
+                    <p class="bg-amber-500 hover:bg-yellow-400 text-center text-black font-semibold p-4" id="btn-two">2</p>
+                    <p class="bg-amber-500 hover:bg-yellow-400 text-center text-black font-semibold p-4" id="btn-three">3</p>
+                </div>
+                <div class="grid grid-cols-2 gap-2">
+                    <p class="bg-red-500 hover:bg-red-600 text-center text-white font-semibold p-4">CE</p>    
+                    <p class="bg-slate-500 hover:bg-slate-700 text-center text-white font-semibold p-4">AC</p>    
+                    <p class="bg-amber-500 hover:bg-yellow-400 text-center text-black font-semibold p-4">X</p>    
+                    <p class="bg-amber-500 hover:bg-yellow-400 text-center text-black font-semibold p-4">/</p>    
+                    <p class="bg-amber-500 hover:bg-yellow-400 text-center text-black font-semibold p-4 row-span-2">+</p>    
+                    <p class="bg-amber-500 hover:bg-yellow-400 text-center text-black font-semibold p-4">-</p>    
+                    <p class="bg-amber-500 hover:bg-yellow-400 text-center text-black font-semibold p-4">=</p>    
+                </div>
+            </div>
+            <!-- buttons ends -->
+        </section>
+        <!-- calculator ends -->
+    </main>
+    <!-- script -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./dist/app.js"></script>
+    <script src="./dist/common.js"></script>
+</body>
+</html>
