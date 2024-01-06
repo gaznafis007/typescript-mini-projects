@@ -24,24 +24,35 @@
             <!-- buttons starts-->
             <div class="flex space-between gap-4 my-4">
                 <div class="grid grid-cols-3 gap-2 w-2/3">
-                    <p class="bg-amber-500 hover:bg-yellow-400 text-center text-black font-semibold p-4" id="btn-seven">7</p>
-                    <p class="bg-amber-500 hover:bg-yellow-400 text-center text-black font-semibold p-4" id="btn-eight">8</p>
-                    <p class="bg-amber-500 hover:bg-yellow-400 text-center text-black font-semibold p-4" id="btn-nine">9</p>
-                    <p class="bg-amber-500 hover:bg-yellow-400 text-center text-black font-semibold p-4" id="btn-four">4</p>
-                    <p class="bg-amber-500 hover:bg-yellow-400 text-center text-black font-semibold p-4" id="btn-five">5</p>
-                    <p class="bg-amber-500 hover:bg-yellow-400 text-center text-black font-semibold p-4" id="btn-six">6</p>
-                    <p class="bg-amber-500 hover:bg-yellow-400 text-center text-black font-semibold p-4" id="btn-one">1</p>
-                    <p class="bg-amber-500 hover:bg-yellow-400 text-center text-black font-semibold p-4" id="btn-two">2</p>
-                    <p class="bg-amber-500 hover:bg-yellow-400 text-center text-black font-semibold p-4" id="btn-three">3</p>
+                    <p class="bg-amber-500 hover:bg-yellow-400 text-center text-black font-semibold p-4" id="btn-seven" onclick='getValueFromElement("btn-seven")'>7</p>
+                    <p class="bg-amber-500 hover:bg-yellow-400 text-center text-black font-semibold p-4" id="btn-eight"
+                    onclick='getValueFromElement("btn-eight")'>8</p>
+                    <p class="bg-amber-500 hover:bg-yellow-400 text-center text-black font-semibold p-4" id="btn-nine"
+                    onclick='getValueFromElement("btn-nine")'>9</p>
+                    <p class="bg-amber-500 hover:bg-yellow-400 text-center text-black font-semibold p-4" id="btn-six"
+                    onclick='getValueFromElement("btn-six")'>6</p>
+                    <p class="bg-amber-500 hover:bg-yellow-400 text-center text-black font-semibold p-4" id="btn-five"
+                    onclick='getValueFromElement("btn-five")'>5</p>
+                    <p class="bg-amber-500 hover:bg-yellow-400 text-center text-black font-semibold p-4" id="btn-four"
+                    onclick='getValueFromElement("btn-four")'>4</p>
+                    <p class="bg-amber-500 hover:bg-yellow-400 text-center text-black font-semibold p-4" id="btn-one"
+                    onclick='getValueFromElement("btn-one")'>1</p>
+                    <p class="bg-amber-500 hover:bg-yellow-400 text-center text-black font-semibold p-4" id="btn-two"
+                    onclick='getValueFromElement("btn-two")'>2</p>
+                    <p class="bg-amber-500 hover:bg-yellow-400 text-center text-black font-semibold p-4" id="btn-three"
+                    onclick='getValueFromElement("btn-three")'>3</p>
                 </div>
                 <div class="grid grid-cols-2 gap-2">
-                    <p class="bg-red-500 hover:bg-red-600 text-center text-white font-semibold p-4">CE</p>    
-                    <p class="bg-slate-500 hover:bg-slate-700 text-center text-white font-semibold p-4">AC</p>    
-                    <p class="bg-amber-500 hover:bg-yellow-400 text-center text-black font-semibold p-4">X</p>    
-                    <p class="bg-amber-500 hover:bg-yellow-400 text-center text-black font-semibold p-4">/</p>    
-                    <p class="bg-amber-500 hover:bg-yellow-400 text-center text-black font-semibold p-4 row-span-2">+</p>    
-                    <p class="bg-amber-500 hover:bg-yellow-400 text-center text-black font-semibold p-4">-</p>    
-                    <p class="bg-amber-500 hover:bg-yellow-400 text-center text-black font-semibold p-4">=</p>    
+                    <p class="bg-red-500 hover:bg-red-600 text-center text-white font-semibold p-4" id="cancel-digit">CE</p>    
+                    <p class="bg-slate-500 hover:bg-slate-700 text-center text-white font-semibold p-4" id="reset">AC</p>    
+                    <p class="bg-amber-500 hover:bg-yellow-400 text-center text-black font-semibold p-4" id="multiply" onclick="handleAction('multiply')">X</p>    
+                    <p class="bg-amber-500 hover:bg-yellow-400 text-center text-black font-semibold p-4" id="division"
+                    onclick="handleAction('division')">/</p>    
+                    <p class="bg-amber-500 hover:bg-yellow-400 text-center text-black font-semibold p-4 row-span-2" id="add"
+                    onclick="handleAction('add')">+</p>    
+                    <p class="bg-amber-500 hover:bg-yellow-400 text-center text-black font-semibold p-4" id="substruct"
+                    onclick="handleAction('substract')">-</p>    
+                    <p class="bg-amber-500 hover:bg-yellow-400 text-center text-black font-semibold p-4" id="result">=</p>    
                 </div>
             </div>
             <!-- buttons ends -->
