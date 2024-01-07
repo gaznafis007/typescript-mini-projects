@@ -11,7 +11,9 @@ let resultBtn = document.getElementById('result') as HTMLElement;
 
 // AC BUTTON
 handleReset.addEventListener('click', ()=>{
-    inputDisplay.innerText=''
+    inputDisplay.innerText='';
+    outputDisplay.innerText = '';
+    actionDisplay.innerText = '';
 })
 cancelDigit.addEventListener('click', ()=>{
     let inputValue = inputDisplay.innerText
@@ -40,7 +42,7 @@ resultBtn.addEventListener("click", ()=>{
         let inputNumbers = [...inputValues.map(value=>{
             return parseFloat(value)
         })]
-        let finalResult = inputNumbers.reduce((prev,curr)=>prev-curr, 0)
+        let finalResult = inputNumbers.reduce((prev,curr)=>prev-curr)
         outputDisplay.innerText=finalResult.toString()
         console.log(finalResult);   
     }
@@ -60,7 +62,13 @@ resultBtn.addEventListener("click", ()=>{
         let inputNumbers = [...inputValues.map(value=>{
             return parseFloat(value)
         })]
-        let finalResult = inputNumbers.reduce((prev,curr)=>prev/curr, 1)
+
+        let finalResult = inputNumbers.reduce((prev,curr)=>{
+            console.log(prev);
+            console.log(curr);
+            console.log(inputNumbers[0]);
+            return inputNumbers[0]/curr
+        },inputNumbers[0])
         outputDisplay.innerText=finalResult.toString()
         console.log(finalResult);    
     }
